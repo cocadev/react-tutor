@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36" height="36" viewBox="0 0 36 36">
+  <defs>
+    <filter id="Ellipse_17" x="0" y="0" width="36" height="36" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-opacity="0.349"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="remove_icon" data-name="remove icon" transform="translate(6 6)">
+    <g transform="matrix(1, 0, 0, 1, -6, -6)" filter="url(#Ellipse_17)">
+      <circle id="Ellipse_17-2" data-name="Ellipse 17" cx="12" cy="12" r="12" transform="translate(6 6)" fill="#fff"/>
+    </g>
+    <g id="delete-disabled">
+      <g id="delete_icon" data-name="delete icon">
+        <path id="Path_198" data-name="Path 198" d="M0,0H24V24H0Z" fill="none"/>
+        <path id="Path_199" data-name="Path 199" d="M8,8l8,8" fill="none" stroke="#0179ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_200" data-name="Path 200" d="M16,8,8,16" fill="none" stroke="#0179ee" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

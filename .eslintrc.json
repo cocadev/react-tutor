@@ -1,0 +1,50 @@
+let immersion = [
+  {timestamp: 1, value: 22}, 
+  {timestamp: 2, value: 44}, 
+  {timestamp: 5, value: 52}, 
+  {timestamp: 9, value: 49}, 
+  {timestamp: 12, value: 49}, 
+  {timestamp: 15, value: 4}, 
+  {timestamp: 18, value:23}, 
+  {timestamp: 21, value: 1}, 
+  {timestamp: 22, value: 11}, 
+  {timestamp: 27, value: 10}
+]
+
+let xxx = immersion.reduce((prev:any[], c: any, index: number) => {
+    if(index < immersion.length && index > 0 ){
+      let timeDiff = Math.abs(c.timestamp-immersion[index-1].timestamp)
+      if(timeDiff>1){
+        for(let i=1;i<=timeDiff-1;i++){
+          prev.push({
+            value: 0,
+            timestamp: immersion[index-1].timestamp + i
+          })
+        }                
+      }
+    }
+    prev.push(c)
+    return prev
+}, [])
+
+console.log(xxx)
+
+============================================================================================
+
+          .reduce((prev: any[], c: any, index: number)=>{
+            console.log('+++++++++++++++++', item.immersion.data.length)
+            if(index<item.immersion.data.length-1 && index > 0){
+              const timeDiff = Math.abs(c.timestamp-item.immersion.data[index-1].timestamp)
+              if(timeDiff>1){
+                for(let i=1;i<timeDiff;i++){
+                  prev.push({
+                    value: 0,
+                    timestamp: c.timestamp-i
+                  })
+                }                
+              }
+            }
+            prev.push(c);
+
+            return prev;
+          },[])
