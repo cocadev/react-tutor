@@ -145,3 +145,4 @@ User flow:
 1. Sign in as admin
 2. View a list of users of the organization he belongs to with organizationUsers endpoint.
 3. Assign a role to the user with the assignRole endpoint.
+4. Finish
