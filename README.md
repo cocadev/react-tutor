@@ -1,3 +1,5 @@
+# Tutor education app Strapi Integration
+
 - [Tutor education app](#tutor-education-app)
 - [Developing](#developing)
 - [File structure](#file-structure)
